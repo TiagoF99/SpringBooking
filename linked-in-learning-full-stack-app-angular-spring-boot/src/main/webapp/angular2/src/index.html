@@ -7,6 +7,27 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- 
+	To import an external js file you can do 2 things:
+
+	1. do a script tag in index.html and write all your code their.
+	<script>function() {....}</script>
+	-> then call it in your app.component.html file
+
+	2. make an external js file with your code and put it in assets folder.
+		-> then in index.html import it <script src="./assets/___.js"></script>
+		-> in app.component.ts add a new function with the same name in 
+		export class AppComponent {
+			that() {
+				new (name of function in external js file)();
+			}
+		}
+		-> then call that function in your app.component.html like usual
+  -->
+
+  <script type="text/javascript" src="./assets/app.js"></script>
+
 </head>
 <body>
   <app-root></app-root>
