@@ -7,3 +7,11 @@
 	top right bottom left;
 	*/
 }
+#room-res {
+	margin: 20px;
+	text-align: center;
+	border: 2px solid black;
+}
+#room-res-title {
+	font-weight: bold;
+}

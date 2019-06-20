@@ -8,7 +8,6 @@ ADD THIS TO GET BOOSTRAP UP IN THIS FILEE
 -->
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -30,6 +29,15 @@ ADD THIS TO GET BOOSTRAP UP IN THIS FILEE
 <div style="margin: 30px;">
   <input id="bar" type="" name="" onkeypress="that()">
   <div id='word'>
+  </div>
+</div>
+
+<div id="room-res">
+  <div id="room-res-title">
+    ROOM RESERVATION
+  </div>
+  <div *ngFor="let room of rooms">
+    <div>room {{room.id}}: {{room.roomNumber}}, {{room.price}}</div>
   </div>
 </div>
 
