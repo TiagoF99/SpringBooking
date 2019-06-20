@@ -13,6 +13,14 @@ export class AppComponent implements OnInit {
   	new that();
   }
 
+  switchOut() {
+  	new switchOut();
+  }
+
+  switchIn() {
+  	new switchIn();
+  }
+
   /**
   * all the code below here needed to make a form
   */
@@ -32,6 +40,10 @@ export class AppComponent implements OnInit {
 
   onSubmit({value, valid}: {value: Roomsearch, valid:boolean}) {
   	console.log(value);
+  }
+
+  reserveRoom(value:String) {
+  	console.log("Room Reservation id is:" + value);
   }
 }
 

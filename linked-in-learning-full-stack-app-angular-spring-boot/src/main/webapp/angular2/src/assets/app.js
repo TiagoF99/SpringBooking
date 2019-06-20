@@ -4,3 +4,12 @@ function that() {
 
     return thing;
 }
+
+function switchOut() {
+	var button = document.getElementById("submit-room");
+	button.style.transition = "width 3s";	
+}
+function switchIn() {
+	var button = document.getElementById("submit-room");
+	button.style.transition = "width .5s";	
+}

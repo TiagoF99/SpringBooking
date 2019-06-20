@@ -15,3 +15,11 @@
 #room-res-title {
 	font-weight: bold;
 }
+#submit-room {
+	margin: 20px;
+	width: 100px;
+	transition: width 3s;
+}
+#submit-room:hover {
+	width: 300px;
+}

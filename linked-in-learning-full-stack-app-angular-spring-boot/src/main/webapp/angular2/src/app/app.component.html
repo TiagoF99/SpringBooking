@@ -38,6 +38,7 @@ ADD THIS TO GET BOOSTRAP UP IN THIS FILEE
   </div>
   <div *ngFor="let room of rooms">
     <div>room {{room.id}}: {{room.roomNumber}}, {{room.price}}</div>
+    <button id="submit-room" type="button" class="btn btn-outline-warning" (click)="reserveRoom(room.id)" (mouseenter) = "switchOut()" (mouseleave) = "switchIn()">Submit</button>
   </div>
 </div>
 
